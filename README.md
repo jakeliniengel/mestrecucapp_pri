@@ -1,0 +1,2 @@
+# mestrecucapp
+Aplicativo de receitas.

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mestrecucapp/ReceitaPage.dart';
+import 'package:mestrecucapp/receita_page.dart';
 
 class listaReceitas extends StatefulWidget {
   final lista;

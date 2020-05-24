@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mestrecucapp/HomePage.dart';
-import 'package:mestrecucapp/LoginPage.dart';
-import 'package:mestrecucapp/SplashPage.dart';
+import 'package:mestrecucapp/home_page.dart';
+import 'package:mestrecucapp/login_page.dart';
+import 'package:mestrecucapp/nova_receita.dart';
+import 'package:mestrecucapp/splash_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         '/LoginPage': (BuildContext context) => LoginPage(),
         '/HomePage': (BuildContext context) => HomePage(),
+        '/NovaReceita': (BuildContext context) =>NovaReceita(),
       },
     );
   }

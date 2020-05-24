@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mestrecucapp/HomePage.dart';
-import 'package:mestrecucapp/RegisterPage.dart';
+import 'package:mestrecucapp/home_page.dart';
+import 'package:mestrecucapp/register_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:mestrecucapp/model/Usuario.dart';
+import 'package:mestrecucapp/model/usuario.dart';
 
 final FirebaseAuth _auth = FirebaseAuth.instance;
 
@@ -66,7 +66,7 @@ class _LoginPageState extends State<LoginPage> {
       controller: _emailController,
       validator: (String value) {
         if (value.isEmpty) {
-          return 'Infomre um email  válido';
+          return 'Informe um email  válido';
         }
         return null;
       },
@@ -129,7 +129,7 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                           RaisedButton(
                             padding: EdgeInsets.all(20),
-                            color: Colors.lightBlue,
+                            color: Colors.pinkAccent,
                             child: Container(
                               width: MediaQuery.of(context).size.width*.85,
                               child: Text('LOGIN', style: TextStyle(color: Colors.white), textAlign: TextAlign.center,),
@@ -137,7 +137,7 @@ class _LoginPageState extends State<LoginPage> {
                             focusColor: Color(0xFFCF9F77),
                             shape: RoundedRectangleBorder(
                                 borderRadius: new BorderRadius.circular(30.0),
-                                side: BorderSide(color: Colors.blue)
+                                side: BorderSide(color: Colors.pink)
                             ),
                             elevation: 7.0,
                             onPressed: () async{
